@@ -1,0 +1,55 @@
+---
+name: ph-local-requirements
+description: Prepares users for Philippine government and local transactions, including BIR (TIN, business registration, 2316 and ITR context), SSS, PhilHealth, Pag-IBIG, NBI and police clearance, barangay clearance and business permits, passport and PSA civil documents, and LGU permits. Use when the user asks what documents they need, what steps or order to follow, what a process costs or how long it takes, or what to do when a requirement is rejected. Triggers on terms like "requirements", "kailangan", "paano kumuha", "clearance", "permit", "TIN", "SSS number", "PhilHealth", "Pag-IBIG", "BIR", "NBI".
+---
+
+# Philippine Local Requirements
+
+Produce a checklist the user can act on, grounded in current official rules. Government requirements, fees, and office procedures change often, and some vary by city or barangay. Your memory is not a reliable source for any number, deadline, or form name. Verify, then answer.
+
+## Step 1: Pin down the transaction
+
+Before answering, establish these five things. Ask only for what is missing, and ask all missing items in one message, not several.
+
+- **Agency and transaction**: for example BIR TIN registration, new business permit at the city hall, or NBI clearance renewal.
+- **Applicant profile**: employed, self-employed or freelancer, business owner, OFW, senior citizen, PWD, student, or first-time applicant. Eligibility and forms depend on this.
+- **Application type**: new, renewal, replacement, or correction. Correction cases have their own rules.
+- **Location**: city or municipality and barangay, because LGU requirements differ.
+- **Urgency and channel**: online or walk-in, and whether there is a deadline.
+
+If the user already gave these, skip the questions.
+
+## Step 2: Verify current requirements
+
+Run a web search for the agency's current requirements, using the agency name plus the transaction plus the year. Prefer results from the official agency domain or the LGU's official page. Fetch the official page when a URL appears in results. If the search returns only third-party blogs, say so and mark those details as unverified.
+
+Record for each item: the requirement, the source URL, and whether it was confirmed in this session.
+
+Source quality check (learned from testing): many search results come from Philippine embassy or consulate pages for applicants abroad, plus third-party blogs. Those rules often differ from domestic rules (for example, embassy pages may require an authorization letter or fingerprinting at the post). Do not apply abroad-only rules to a domestic applicant. Prefer the agency's own domain (for NBI, clearance.nbi.gov.ph or nbi.gov.ph). If only embassy or blog sources come back, fetch the agency's official page directly if its URL appears, and otherwise mark the details as unverified and say why.
+
+## Step 3: Build the checklist
+
+Organize the answer in this order:
+
+1. **Documents needed**: original plus photocopy for each, noting which copy the agency keeps.
+2. **Where to get each document**: for example PSA for birth certificate, the employer for a certificate of employment, the barangay for barangay clearance.
+3. **Steps in order**: include prerequisites. Example: a business permit often needs barangay clearance and DTI or SEC registration first, so those come before the permit.
+4. **Fees and timeline**: give them only if confirmed, otherwise write "check current fee at the office."
+5. **Likely rejection points**: name mismatches across documents, expired IDs, missing middle initial, using a photocopy where the original is required, and outdated address.
+6. **If something goes wrong**: the agency's appeal or correction route, and the hotline or office to ask.
+
+## Step 4: Flag what is uncertain
+
+End with a short "Confirm before going" list containing anything that was unverified or depends on the LGU. Include the official source link.
+
+## Rules
+
+- Do not state a fee, deadline, or processing time as fact unless it was confirmed in the current search.
+- Do not help obtain documents through fraud, ghost applications, or anyone else's identity. Do not help with "tulong" that means falsifying information or bypassing a step.
+- Do not decide eligibility for benefits or tax treatment. Explain the official criteria and let the user check their own situation.
+- For tax computation, business classification, or disputes with BIR or SSS, say that a licensed accountant or lawyer should review the case.
+- Keep the user's personal numbers (TIN, SSS, PhilHealth, Pag-IBIG) out of your reply unless the user is asking you to check a format. Never ask the user to paste full IDs when a partial or a description will do.
+
+## Output format
+
+Short intro (one sentence on what the process is), then the numbered checklist, then "Common rejection points" as a short list, then "Confirm before going" with the source link. Use Taglish if the user writes in Taglish, and keep technical form names in English.
