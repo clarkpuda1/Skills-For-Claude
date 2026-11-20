@@ -1,0 +1,19 @@
+{
+  "name": "quota-guard",
+  "version": "1.0.0",
+  "description": "High-signal, zero-filler response discipline and clarify-once guardrails that help Claude users stretch message and context limits without losing accuracy.",
+  "author": {
+    "name": "clarkpuda1"
+  },
+  "homepage": "https://github.com/clarkpuda1/quota-guard",
+  "repository": "https://github.com/clarkpuda1/quota-guard.git",
+  "license": "MIT",
+  "keywords": [
+    "claude-skill",
+    "productivity",
+    "token-efficiency",
+    "concise",
+    "workflow",
+    "quota-guard"
+  ]
+}
